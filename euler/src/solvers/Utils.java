@@ -32,4 +32,17 @@ public class Utils {
 
         return factors;
     }
+
+    public static boolean isPalindrome(String s) {
+        String rev = new StringBuilder(s).reverse().toString();
+        return s.equals(rev);
+    }
+
+    public static boolean isPalindrome(long n) {
+        return isPalindrome(Long.toString(n));
+    }
+
+    public static boolean isPalindrome(int n) {
+        return isPalindrome(Integer.toString(n));
+    }
 }
