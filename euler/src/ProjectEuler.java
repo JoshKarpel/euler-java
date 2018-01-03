@@ -12,7 +12,13 @@ public class ProjectEuler {
             System.out.println("Couldn't find a solver for problem " + whichSolver);
             System.exit(0);
         }
-        System.out.println("Answer: " + solver.solve());
+
+        long startTime = System.currentTimeMillis();
+        long answer = solver.solve();
+        long endTime = System.currentTimeMillis();
+        double duration = ((double) (endTime - startTime)) / 1_000_000.0;
+
+        System.out.println(String.format("Answer: %d  |  Elapsed Time: %f s", answer, duration));
     }
 
     private static Map<String, solvers.Solver> getSolverMap() {
