@@ -20,6 +20,7 @@ public class ProjectEuler {
 
         solverMap.put("001", solvers.P001::solve);
         solverMap.put("002", solvers.P002::solve);
+        solverMap.put("003", solvers.P003::solve);
 
         return solverMap;
     }
