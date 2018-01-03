@@ -28,6 +28,8 @@ public class ProjectEuler {
         solverMap.put("002", solvers.P002::solve);
         solverMap.put("003", solvers.P003::solve);
         solverMap.put("004", solvers.P004::solve);
+        solverMap.put("006", solvers.P006::solve);
+        solverMap.put("016", solvers.P016::solve);
 
         return solverMap;
     }
