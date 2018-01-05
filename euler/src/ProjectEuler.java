@@ -31,6 +31,7 @@ public class ProjectEuler {
         solverMap.put("006", solvers.P006::solve);
         solverMap.put("012", solvers.P012::solve);
         solverMap.put("016", solvers.P016::solve);
+        solverMap.put("021", solvers.P021::solve);
 
         return solverMap;
     }
