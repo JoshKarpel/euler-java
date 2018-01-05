@@ -16,11 +16,11 @@ public class P021 {
         return amicables.stream().mapToLong(Long::valueOf).sum();
     }
 
-    public static long sumProperFactors(long n) {
+    private static long sumProperFactors(long n) {
         return Utils.properFactorization(n).stream().mapToLong(Long::valueOf).sum();
     }
 
-    public static boolean isAmicable(long a) {
+    private static boolean isAmicable(long a) {
         long b = sumProperFactors(a);
         return (a != b) && (sumProperFactors(b) == a);
     }
